@@ -1,0 +1,116 @@
+/* Variáveis de cores para fácil edição */
+:root {
+    --primary: #5d4037; /* Marrom profundo */
+    --accent: #d4a373;  /* Bege dourado */
+    --bg-page: #f9f7f2; /* Creme clarinho */
+    --bg-card: #ffffff; 
+    --text-main: #2b2d42;
+    --text-light: #777777;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: var(--bg-card);
+    padding: 60px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid var(--accent);
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    color: var(--primary);
+    margin: 0;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.8rem;
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+/* Responsividade para Celulares */
+@media (max-width: 768px) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+    .container {
+        padding: 30px;
+    }
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: var(--primary);
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: baseline;
+}
+
+.item-info {
+    flex: 0 1 auto;
+}
+
+.item-name {
+    font-weight: 600;
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+.item-desc {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    margin: 2px 0 0 0;
+}
+
+.dots {
+    flex: 1;
+    border-bottom: 1px dotted #ccc;
+    margin: 0 10px;
+}
+
+.item-price {
+    font-weight: 600;
+    color: var(--primary);
+    font-size: 1.1rem;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--accent);
+    font-weight: 600;
+}
