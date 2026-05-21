@@ -13,4 +13,5 @@ O design utiliza uma paleta de cores creme e marrom café, com tipografia contra
 ## 📱 Responsividade
 O layout foi construído com a abordagem *mobile-first*, garantindo que a visualização em smartphones seja intuitiva e organizada.
 
+## Imagem do Projeto
 <img src="img/imagem do projeto.png" alt="imagem do projeto">
